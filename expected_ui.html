@@ -8,7 +8,131 @@
 </head>
 <body>
     <div class="container">
-        <!-- Top Tab Navigation -->
+
+
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="profile-header">
+                <input type="text" placeholder="Search profiles" class="search-input">
+                <button class="search-btn">🔍</button>
+            </div>
+
+            <div class="profile-selector">
+                <div class="profile-item active">
+                    <span class="profile-number">1</span>
+                    <span class="profile-name">Profile 1</span>
+                </div>
+                <button class="add-profile-btn">+ Add profile</button>
+                <button class="sort-profiles-btn">⚡ Sort profiles</button>
+                <button class="floating-helper-btn">🚫 Show Floating Ball Helper</button>
+                <button class="disable-js-btn">JS Disable Javascript</button>
+                <button class="rate-btn">👍 Rate us</button>
+                <button class="help-btn">❓ Help</button>
+            </div>
+
+            <!-- Profile Configuration -->
+            <div class="profile-config">
+                <div class="config-section">
+                    <div class="section-header">
+                        <input type="checkbox" checked>
+                        <strong>Request headers</strong>
+                    </div>
+                    <div class="header-inputs">
+                        <div class="header-row">
+                            <input type="checkbox" checked>
+                            <input type="text" placeholder="Name" class="name-input">
+                            <input type="text" placeholder="Value" class="value-input">
+                            <button class="delete-btn">×</button>
+                        </div>
+                        <div class="header-row">
+                            <input type="checkbox" checked>
+                            <input type="text" placeholder="Name" class="name-input">
+                            <input type="text" placeholder="Value" class="value-input">
+                            <button class="delete-btn">×</button>
+                        </div>
+                        <div class="header-row">
+                            <input type="checkbox" checked>
+                            <input type="text" placeholder="Name" class="name-input">
+                            <input type="text" placeholder="Value" class="value-input">
+                            <button class="delete-btn">×</button>
+                        </div>
+                        <button class="add-header-btn">+ Add request header</button>
+                    </div>
+                </div>
+
+                <div class="config-section">
+                    <div class="section-header">
+                        <input type="checkbox" checked>
+                        <strong>Cookie request append</strong>
+                    </div>
+                    <div class="cookie-inputs">
+                        <div class="cookie-row">
+                            <input type="checkbox" checked>
+                            <input type="text" placeholder="Name" class="name-input">
+                            <input type="text" placeholder="Value" class="value-input">
+                            <button class="delete-btn">×</button>
+                        </div>
+                        <div class="cookie-row">
+                            <input type="checkbox" checked>
+                            <input type="text" placeholder="Name" class="name-input">
+                            <input type="text" placeholder="Value" class="value-input">
+                            <button class="delete-btn">×</button>
+                        </div>
+                        <button class="add-cookie-btn">+ Add request cookie append item</button>
+                    </div>
+                </div>
+
+                <div class="config-section">
+                    <div class="section-header">
+                        <input type="checkbox" checked>
+                        <strong>Redirect URLs</strong>
+                    </div>
+                    <div class="redirect-inputs">
+                        <div class="redirect-row">
+                            <input type="checkbox" checked>
+                            <input type="text" placeholder="Original URL" class="original-url-input">
+                            <input type="text" placeholder="Redirect URL" class="redirect-url-input">
+                            <button class="delete-btn">×</button>
+                        </div>
+                        <button class="add-redirect-btn">+ Add redirect URL</button>
+                    </div>
+                </div>
+
+                <div class="config-section">
+                    <div class="section-header">
+                        <input type="checkbox" checked>
+                        <strong>Tab filters</strong>
+                    </div>
+                    <div class="tab-filter-item">
+                        <input type="checkbox" checked>
+                        <span class="update-badge">Update</span>
+                        <span class="tab-info">⚡ 43xazxvg6 - HTML - OneCompiler</span>
+                        <button class="delete-btn">×</button>
+                    </div>
+                </div>
+
+                <div class="config-section">
+                    <div class="section-header">
+                        <input type="checkbox" checked>
+                        <strong>Request URL filters</strong>
+                    </div>
+                    <div class="url-filter-item">
+                        <input type="checkbox" checked>
+                        <input type="text" value=".*//onecompiler.com/.*" class="url-pattern-input">
+                        <button class="delete-btn">×</button>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="mod-btn">+ Mod</button>
+                    <button class="filter-btn">🔽 Filter</button>
+                    <button class="login-btn">⏳ Login</button>
+                    <button class="browse-btn">Browse my profiles</button>
+                </div>
+            </div>
+        </div>
+        
+                <!-- Top Tab Navigation -->
         <div class="tab-nav">
             <button class="tab-btn active" data-tab="mods">MODS</button>
             <button class="tab-btn" data-tab="filters">FILTERS</button>
@@ -165,128 +289,6 @@
                         <div class="filter-title">Exclude request URL filter</div>
                         <div class="filter-description">Deactivate when request URLs matches a URL regex</div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Profile Section -->
-        <div class="profile-section">
-            <div class="profile-header">
-                <input type="text" placeholder="Search profiles" class="search-input">
-                <button class="search-btn">🔍</button>
-            </div>
-
-            <div class="profile-selector">
-                <div class="profile-item active">
-                    <span class="profile-number">1</span>
-                    <span class="profile-name">Profile 1</span>
-                </div>
-                <button class="add-profile-btn">+ Add profile</button>
-                <button class="sort-profiles-btn">⚡ Sort profiles</button>
-                <button class="floating-helper-btn">🚫 Show Floating Ball Helper</button>
-                <button class="disable-js-btn">JS Disable Javascript</button>
-                <button class="rate-btn">👍 Rate us</button>
-                <button class="help-btn">❓ Help</button>
-            </div>
-
-            <!-- Profile Configuration -->
-            <div class="profile-config">
-                <div class="config-section">
-                    <div class="section-header">
-                        <input type="checkbox" checked>
-                        <strong>Request headers</strong>
-                    </div>
-                    <div class="header-inputs">
-                        <div class="header-row">
-                            <input type="checkbox" checked>
-                            <input type="text" placeholder="Name" class="name-input">
-                            <input type="text" placeholder="Value" class="value-input">
-                            <button class="delete-btn">×</button>
-                        </div>
-                        <div class="header-row">
-                            <input type="checkbox" checked>
-                            <input type="text" placeholder="Name" class="name-input">
-                            <input type="text" placeholder="Value" class="value-input">
-                            <button class="delete-btn">×</button>
-                        </div>
-                        <div class="header-row">
-                            <input type="checkbox" checked>
-                            <input type="text" placeholder="Name" class="name-input">
-                            <input type="text" placeholder="Value" class="value-input">
-                            <button class="delete-btn">×</button>
-                        </div>
-                        <button class="add-header-btn">+ Add request header</button>
-                    </div>
-                </div>
-
-                <div class="config-section">
-                    <div class="section-header">
-                        <input type="checkbox" checked>
-                        <strong>Cookie request append</strong>
-                    </div>
-                    <div class="cookie-inputs">
-                        <div class="cookie-row">
-                            <input type="checkbox" checked>
-                            <input type="text" placeholder="Name" class="name-input">
-                            <input type="text" placeholder="Value" class="value-input">
-                            <button class="delete-btn">×</button>
-                        </div>
-                        <div class="cookie-row">
-                            <input type="checkbox" checked>
-                            <input type="text" placeholder="Name" class="name-input">
-                            <input type="text" placeholder="Value" class="value-input">
-                            <button class="delete-btn">×</button>
-                        </div>
-                        <button class="add-cookie-btn">+ Add request cookie append item</button>
-                    </div>
-                </div>
-
-                <div class="config-section">
-                    <div class="section-header">
-                        <input type="checkbox" checked>
-                        <strong>Redirect URLs</strong>
-                    </div>
-                    <div class="redirect-inputs">
-                        <div class="redirect-row">
-                            <input type="checkbox" checked>
-                            <input type="text" placeholder="Original URL" class="original-url-input">
-                            <input type="text" placeholder="Redirect URL" class="redirect-url-input">
-                            <button class="delete-btn">×</button>
-                        </div>
-                        <button class="add-redirect-btn">+ Add redirect URL</button>
-                    </div>
-                </div>
-
-                <div class="config-section">
-                    <div class="section-header">
-                        <input type="checkbox" checked>
-                        <strong>Tab filters</strong>
-                    </div>
-                    <div class="tab-filter-item">
-                        <input type="checkbox" checked>
-                        <span class="update-badge">Update</span>
-                        <span class="tab-info">⚡ 43xazxvg6 - HTML - OneCompiler</span>
-                        <button class="delete-btn">×</button>
-                    </div>
-                </div>
-
-                <div class="config-section">
-                    <div class="section-header">
-                        <input type="checkbox" checked>
-                        <strong>Request URL filters</strong>
-                    </div>
-                    <div class="url-filter-item">
-                        <input type="checkbox" checked>
-                        <input type="text" value=".*//onecompiler.com/.*" class="url-pattern-input">
-                        <button class="delete-btn">×</button>
-                    </div>
-                </div>
-
-                <div class="action-buttons">
-                    <button class="mod-btn">+ Mod</button>
-                    <button class="filter-btn">🔽 Filter</button>
-                    <button class="login-btn">⏳ Login</button>
-                    <button class="browse-btn">Browse my profiles</button>
                 </div>
             </div>
         </div>
