@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModHeader Extension</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Top Tab Navigation -->
+        <div class="tab-nav">
+            <button class="tab-btn active" data-tab="mods">MODS</button>
+            <button class="tab-btn" data-tab="filters">FILTERS</button>
+            <button class="close-btn">×</button>
+        </div>
+
+        <!-- Mods Tab Content -->
+        <div id="mods" class="tab-content active">
+            <div class="mod-section">
+                <div class="mod-item popular">
+                    <div class="mod-icon">📝</div>
+                    <div class="mod-content">
+                        <div class="mod-title">Request header <span class="popular-badge">POPULAR</span></div>
+                        <div class="mod-description">Add, modify, or delete request header</div>
+                    </div>
+                </div>
+
+                <div class="mod-item popular">
+                    <div class="mod-icon">📝</div>
+                    <div class="mod-content">
+                        <div class="mod-title">Response header <span class="popular-badge">POPULAR</span></div>
+                        <div class="mod-description">Add, modify, or delete response header</div>
+                    </div>
+                </div>
+
+                <div class="mod-item">
+                    <div class="mod-icon">↗</div>
+                    <div class="mod-content">
+                        <div class="mod-title">Redirect URL</div>
+                        <div class="mod-description">Redirect matching URLs to other URLs</div>
+                    </div>
+                </div>
+
+                <div class="mod-item">
+                    <div class="mod-icon">🔒</div>
+                    <div class="mod-content">
+                        <div class="mod-title">Content-Security-Policy</div>
+                        <div class="mod-description">Edit and test Content-Security-Policy response header</div>
+                    </div>
+                </div>
+
+                <div class="mod-item">
+                    <div class="mod-icon">🍪</div>
+                    <div class="mod-content">
+                        <div class="mod-title">Cookie request header append</div>
+                        <div class="mod-description">Append individual cookies in Cookie request header</div>
+                    </div>
+                </div>
+
+                <div class="mod-item disabled">
+                    <div class="mod-icon">🍪</div>
+                    <div class="mod-content">
+                        <div class="mod-title">Cookie request header</div>
+                        <div class="mod-description">Modify individual cookies in Cookie request header</div>
+                    </div>
+                </div>
+
+                <div class="mod-item disabled">
+                    <div class="mod-icon">🍪</div>
+                    <div class="mod-content">
+                        <div class="mod-title">Set-Cookie response</div>
+                        <div class="mod-description">Modify individual cookies in Set-Cookie response header</div>
+                    </div>
+                </div>
+
+                <div class="mod-item">
+                    <div class="mod-icon">⭕</div>
+                    <div class="mod-content">
+                        <div class="mod-title">Want more?</div>
+                        <div class="mod-description">Try ModResponse to modify and replay HTTP response</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters Tab Content -->
+        <div id="filters" class="tab-content">
+            <div class="filter-section">
+                <div class="filter-item popular">
+                    <div class="filter-icon">📁</div>
+                    <div class="filter-content">
+                        <div class="filter-title">Tab filter <span class="popular-badge">POPULAR</span></div>
+                        <div class="filter-description">Restrict to the selected tabs</div>
+                    </div>
+                </div>
+
+                <div class="filter-item popular">
+                    <div class="filter-icon">🌐</div>
+                    <div class="filter-content">
+                        <div class="filter-title">Request URL filter <span class="popular-badge">POPULAR</span></div>
+                        <div class="filter-description">Restrict to request URLs that matches a URL regex</div>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <div class="filter-icon">➕</div>
+                    <div class="filter-content">
+                        <div class="filter-title">Request domain filter</div>
+                        <div class="filter-description">Restrict requests to the specified domains</div>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <div class="filter-icon">📊</div>
+                    <div class="filter-content">
+                        <div class="filter-title">Tab group filter</div>
+                        <div class="filter-description">Restrict to the selected tab group</div>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <div class="filter-icon">🔲</div>
+                    <div class="filter-content">
+                        <div class="filter-title">Window filter</div>
+                        <div class="filter-description">Restrict to the selected window</div>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <div class="filter-icon">⏰</div>
+                    <div class="filter-content">
+                        <div class="filter-title">Auto-off timer</div>
+                        <div class="filter-description">Automatically deactivate the mods after certain time</div>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <div class="filter-icon">🔧</div>
+                    <div class="filter-content">
+                        <div class="filter-title">Resource filter</div>
+                        <div class="filter-description">Restrict to the matching resource type</div>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <div class="filter-icon">🌐</div>
+                    <div class="filter-content">
+                        <div class="filter-title">Exclude request domain filter</div>
+                        <div class="filter-description">Deactivate when request domain matches a domains</div>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <div class="filter-icon">📝</div>
+                    <div class="filter-content">
+                        <div class="filter-title">Request methods filter</div>
+                        <div class="filter-description">Restrict to the matching request method</div>
+                    </div>
+                </div>
+
+                <div class="filter-item disabled">
+                    <div class="filter-icon">🌐</div>
+                    <div class="filter-content">
+                        <div class="filter-title">Exclude request URL filter</div>
+                        <div class="filter-description">Deactivate when request URLs matches a URL regex</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="profile-header">
+                <input type="text" placeholder="Search profiles" class="search-input">
+                <button class="search-btn">🔍</button>
+            </div>
+
+            <div class="profile-selector">
+                <div class="profile-item active">
+                    <span class="profile-number">1</span>
+                    <span class="profile-name">Profile 1</span>
+                </div>
+                <button class="add-profile-btn">+ Add profile</button>
+                <button class="sort-profiles-btn">⚡ Sort profiles</button>
+                <button class="floating-helper-btn">🚫 Show Floating Ball Helper</button>
+                <button class="disable-js-btn">JS Disable Javascript</button>
+                <button class="rate-btn">👍 Rate us</button>
+                <button class="help-btn">❓ Help</button>
+            </div>
+
+            <!-- Profile Configuration -->
+            <div class="profile-config">
+                <div class="config-section">
+                    <div class="section-header">
+                        <input type="checkbox" checked>
+                        <strong>Request headers</strong>
+                    </div>
+                    <div class="header-inputs">
+                        <div class="header-row">
+                            <input type="checkbox" checked>
+                            <input type="text" placeholder="Name" class="name-input">
+                            <input type="text" placeholder="Value" class="value-input">
+                            <button class="delete-btn">×</button>
+                        </div>
+                        <div class="header-row">
+                            <input type="checkbox" checked>
+                            <input type="text" placeholder="Name" class="name-input">
+                            <input type="text" placeholder="Value" class="value-input">
+                            <button class="delete-btn">×</button>
+                        </div>
+                        <div class="header-row">
+                            <input type="checkbox" checked>
+                            <input type="text" placeholder="Name" class="name-input">
+                            <input type="text" placeholder="Value" class="value-input">
+                            <button class="delete-btn">×</button>
+                        </div>
+                        <button class="add-header-btn">+ Add request header</button>
+                    </div>
+                </div>
+
+                <div class="config-section">
+                    <div class="section-header">
+                        <input type="checkbox" checked>
+                        <strong>Cookie request append</strong>
+                    </div>
+                    <div class="cookie-inputs">
+                        <div class="cookie-row">
+                            <input type="checkbox" checked>
+                            <input type="text" placeholder="Name" class="name-input">
+                            <input type="text" placeholder="Value" class="value-input">
+                            <button class="delete-btn">×</button>
+                        </div>
+                        <div class="cookie-row">
+                            <input type="checkbox" checked>
+                            <input type="text" placeholder="Name" class="name-input">
+                            <input type="text" placeholder="Value" class="value-input">
+                            <button class="delete-btn">×</button>
+                        </div>
+                        <button class="add-cookie-btn">+ Add request cookie append item</button>
+                    </div>
+                </div>
+
+                <div class="config-section">
+                    <div class="section-header">
+                        <input type="checkbox" checked>
+                        <strong>Redirect URLs</strong>
+                    </div>
+                    <div class="redirect-inputs">
+                        <div class="redirect-row">
+                            <input type="checkbox" checked>
+                            <input type="text" placeholder="Original URL" class="original-url-input">
+                            <input type="text" placeholder="Redirect URL" class="redirect-url-input">
+                            <button class="delete-btn">×</button>
+                        </div>
+                        <button class="add-redirect-btn">+ Add redirect URL</button>
+                    </div>
+                </div>
+
+                <div class="config-section">
+                    <div class="section-header">
+                        <input type="checkbox" checked>
+                        <strong>Tab filters</strong>
+                    </div>
+                    <div class="tab-filter-item">
+                        <input type="checkbox" checked>
+                        <span class="update-badge">Update</span>
+                        <span class="tab-info">⚡ 43xazxvg6 - HTML - OneCompiler</span>
+                        <button class="delete-btn">×</button>
+                    </div>
+                </div>
+
+                <div class="config-section">
+                    <div class="section-header">
+                        <input type="checkbox" checked>
+                        <strong>Request URL filters</strong>
+                    </div>
+                    <div class="url-filter-item">
+                        <input type="checkbox" checked>
+                        <input type="text" value=".*//onecompiler.com/.*" class="url-pattern-input">
+                        <button class="delete-btn">×</button>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="mod-btn">+ Mod</button>
+                    <button class="filter-btn">🔽 Filter</button>
+                    <button class="login-btn">⏳ Login</button>
+                    <button class="browse-btn">Browse my profiles</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
